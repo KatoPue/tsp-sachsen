@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Talentstützpunkte in Sachsen</title>
+    <style>
+        body {
+            background-color: #015cba;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .three-columns-grid {
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .three-columns-grid div {
+            box-shadow:  8px 8px 5px rgba(0,0,0,0.4);
+            height: 100vh;
+        }
+
+        .three-columns-grid div h2,
+        .three-columns-grid div p {
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        .three-columns-grid .Zschopau {
+            background-color: firebrick;
+            z-index: 2;
+        }
+        .three-columns-grid .Dresden {
+            /*background-color: #00ffff;*/
+            background-color: #405e66;
+            z-index: 1;
+        }
+        .three-columns-grid .Chemnitz {
+            background-color: #524d45;
+        }
+
+        /*Buttons*/
+        .button {
+            color: #ffffff;
+            hyphens: auto;
+            word-break: break-word;
+            display: inline-block;
+            padding: .25rem .75rem;
+            margin: .25rem 0.125rem;
+            background: 0 0;
+            text-transform: none;
+            box-sizing: border-box;
+            border: 3px solid #ffffff;
+            border-radius: 6px;
+            background: #015cba;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: 1.5;
+            text-wrap: nowrap;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            border-color: transparent;
+            background: #015cba;
+        }
+
+        @media (max-width: 568px) {
+            .three-columns-grid {
+                display: block;
+            }
+            .three-columns-grid div {
+                height: auto;
+                padding-top: 1px; /*to mitigate mobile visual bug*/
+                padding-bottom: 1px; /*to mitigate mobile visual bug*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="three-columns-grid">
+        <div class="Zschopau">
+            <h2>TSP Zschopau</h2>
+<!--
+            <img src="banner-tsp-zschopau.png" alt="TSP Zschopau">
+-->
+            <img src="banner-tsp-chemnitz.png" alt="TSP Chemnitz">
+
+            <p>Karateverein Zschopau e.V.</p>
+            <p>Der TSP Zschopau arbeitet in der Disziplin Kata mit Schwerpunkt Goju Ryu. </p>
+            <p><a class="button" href="https://www.karate-zschopau.de/">zum TSP-Zschopau</a></p>
+        </div>
+        <div class="Dresden">
+            <h2>TSP Dresden</h2>
+<!--
+            <img src="banner-tsp-dresden.png" alt="TSP Dresden">
+-->
+            <img src="banner-tsp-chemnitz.png" alt="TSP Chemnitz">
+
+            <p>Dresdner Karate Team</p>
+            <p>Der TSP Dresden arbeitet in der Disziplin Kata mit Schwerpunkt Shotokan.</p>
+            <p><a class="button" href="https://www.dresdner-karate.de/talentst%C3%BCtzpunkt-dresden/">zum TSP-Dresden</a></p>
+        </div>
+        <div class="Chemnitz">
+            <h2>TSP Chemnitz</h2>
+            <img src="banner-tsp-chemnitz.png" alt="TSP Chemnitz">
+            <p>Chemnitzer Freizeit- und Wohngebietssportverein e.V.</p>
+            <p>Der TSP Chemnitz arbeitet in der Disziplin Kata mit Schwerpunkt Wado Ruy.</p>
+            <p><a class="button" href="https://bushido-chemnitz.de/">zum TSP-Chemnitz</a></p>
+        </div>
+    </div>
+</body>
+</html>
