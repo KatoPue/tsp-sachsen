@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Talentstützpunkte in Sachsen</title>
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="TSP-Sachsen" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <style>
         body {
+            font-family: sans-serif;
             background-color: #015cba;
             color: white;
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -24,7 +33,7 @@
         }
 
         .three-columns-grid div {
-            box-shadow:  8px 8px 5px rgba(0,0,0,0.4);
+            box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.4);
             height: 100vh;
         }
 
@@ -36,16 +45,17 @@
         }
 
         .three-columns-grid .Zschopau {
-            background-color: firebrick;
+            background: linear-gradient(180deg, rgba(141, 33, 40, 1) 0%, rgba(84, 19, 24, 1) 75%);
             z-index: 2;
         }
+
         .three-columns-grid .Dresden {
-            /*background-color: #00ffff;*/
-            background-color: #405e66;
+            background: linear-gradient(180deg, rgba(44, 128, 128, 1) 0%, rgba(29, 77, 77, 1) 75%);
             z-index: 1;
         }
+
         .three-columns-grid .Chemnitz {
-            background-color: #524d45;
+            background: linear-gradient(180deg, rgba(145, 145, 145, 1) 0%, rgba(0, 0, 0, 1) 75%);
         }
 
         /*Buttons*/
@@ -80,6 +90,7 @@
             .three-columns-grid {
                 display: block;
             }
+
             .three-columns-grid div {
                 height: auto;
                 padding-top: 1px; /*to mitigate mobile visual bug*/
@@ -89,36 +100,37 @@
     </style>
 </head>
 <body>
-    <div class="three-columns-grid">
-        <div class="Zschopau">
-            <h2>TSP Zschopau</h2>
-<!--
-            <img src="banner-tsp-zschopau.png" alt="TSP Zschopau">
--->
-            <img src="banner-tsp-chemnitz.png" alt="TSP Chemnitz">
+<div class="three-columns-grid">
+    <div class="Zschopau">
+        <h2>TSP Zschopau</h2>
+        <!--
+                    <img src="banner-tsp-zschopau.png" alt="TSP Zschopau">
+        -->
+        <img src="banner-tsp-chemnitz.png" alt="TSP Chemnitz">
 
-            <p>Karateverein Zschopau e.V.</p>
-            <p>Der TSP Zschopau arbeitet in der Disziplin Kata mit Schwerpunkt Goju Ryu. </p>
-            <p><a class="button" href="https://www.karate-zschopau.de/">zum TSP-Zschopau</a></p>
-        </div>
-        <div class="Dresden">
-            <h2>TSP Dresden</h2>
-<!--
-            <img src="banner-tsp-dresden.png" alt="TSP Dresden">
--->
-            <img src="banner-tsp-chemnitz.png" alt="TSP Chemnitz">
-
-            <p>Dresdner Karate Team</p>
-            <p>Der TSP Dresden arbeitet in der Disziplin Kata mit Schwerpunkt Shotokan.</p>
-            <p><a class="button" href="https://www.dresdner-karate.de/talentst%C3%BCtzpunkt-dresden/">zum TSP-Dresden</a></p>
-        </div>
-        <div class="Chemnitz">
-            <h2>TSP Chemnitz</h2>
-            <img src="banner-tsp-chemnitz.png" alt="TSP Chemnitz">
-            <p>Chemnitzer Freizeit- und Wohngebietssportverein e.V.</p>
-            <p>Der TSP Chemnitz arbeitet in der Disziplin Kata mit Schwerpunkt Wado Ruy.</p>
-            <p><a class="button" href="https://bushido-chemnitz.de/talentstuetzpunkt">zum TSP-Chemnitz</a></p>
-        </div>
+        <p>Karateverein Zschopau e.V.</p>
+        <p>Der TSP Zschopau arbeitet in der Disziplin Kata mit Schwerpunkt Goju Ryu. </p>
+        <p><a class="button" href="https://www.karate-zschopau.de/">zum TSP-Zschopau</a></p>
     </div>
+    <div class="Dresden">
+        <h2>TSP Dresden</h2>
+        <!--
+                    <img src="banner-tsp-dresden.png" alt="TSP Dresden">
+        -->
+        <img src="banner-tsp-chemnitz.png" alt="TSP Chemnitz">
+
+        <p>Dresdner Karate Team</p>
+        <p>Der TSP Dresden arbeitet in der Disziplin Kata mit Schwerpunkt Shotokan.</p>
+        <p><a class="button" href="https://www.dresdner-karate.de/talentst%C3%BCtzpunkt-dresden/">zum TSP-Dresden</a>
+        </p>
+    </div>
+    <div class="Chemnitz">
+        <h2>TSP Chemnitz</h2>
+        <img src="banner-tsp-chemnitz.png" alt="TSP Chemnitz">
+        <p>Chemnitzer Freizeit- und Wohngebietssportverein e.V.</p>
+        <p>Der TSP Chemnitz arbeitet in der Disziplin Kata mit Schwerpunkt Wado Ruy.</p>
+        <p><a class="button" href="https://bushido-chemnitz.de/talentstuetzpunkt">zum TSP-Chemnitz</a></p>
+    </div>
+</div>
 </body>
 </html>
