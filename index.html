@@ -4,7 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Talentstützpunkte in Sachsen</title>
+    <!-- SEO Meta Tags -->
+    <title>Talentstützpunkte Karate in Sachsen | Dresden, Chemnitz, Zschopau</title>
+    <meta name="description" content="Offizielle Karate-Talentstützpunkte in Sachsen. Kata-Training in Dresden (Shotokan), Chemnitz (Wado Ryu) und Zschopau (Goju Ryu). Entdecken Sie die Förderung junger Karate-Talente.">
+    <meta name="keywords" content="Karate, Talentstützpunkt, Sachsen, Dresden, Chemnitz, Zschopau, Kata, Shotokan, Wado Ryu, Goju Ryu">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Talentstützpunkte Karate in Sachsen">
+    <meta property="og:description" content="Offizielle Karate-Talentstützpunkte in Sachsen. Kata-Training in Dresden, Chemnitz und Zschopau.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tsp-kata-sachsen.de">
+    <meta property="og:image" content="https://tsp-kata-sachsen.de/icons/web-app-manifest-512x512.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Talentstützpunkte Karate in Sachsen">
+    <meta name="twitter:description" content="Offizielle Karate-Talentstützpunkte in Sachsen. Kata-Training in Dresden, Chemnitz und Zschopau.">
+
+    <!-- Favicon -->
 
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -32,13 +49,14 @@
             grid-template-columns: 1fr 1fr 1fr;
         }
 
-        .three-columns-grid div {
+        .three-columns-grid article {
             /*box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.4);*/
             height: 100vh;
+            padding: 15px;
         }
 
-        .three-columns-grid div h2,
-        .three-columns-grid div p {
+        .three-columns-grid article h2,
+        .three-columns-grid article p {
             text-align: center;
             padding-left: 1em;
             padding-right: 1em;
@@ -95,38 +113,68 @@
                 display: block;
             }
 
-            .three-columns-grid div {
+            .three-columns-grid article {
                 height: auto;
                 padding-top: 1px; /*to mitigate mobile visual bug*/
                 padding-bottom: 1px; /*to mitigate mobile visual bug*/
             }
         }
     </style>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Talentstützpunkte Karate Sachsen",
+            "url": "https://tsp-kata-sachsen.de",
+            "subOrganization": [
+                {
+                    "@type": "SportsOrganization",
+                    "name": "TSP Zschopau",
+                    "url": "https://www.karate-zschopau.de/",
+                    "description": "Karate Talentstützpunkt Zschopau - Spezialisierung auf Kata Goju Ryu"
+                },
+                {
+                    "@type": "SportsOrganization",
+                    "name": "TSP Dresden",
+                    "url": "https://www.dresdner-karate.de/talentst%C3%BCtzpunkt-dresden/",
+                    "description": "Karate Talentstützpunkt Dresden - Spezialisierung auf Kata Shotokan"
+                },
+                {
+                    "@type": "SportsOrganization",
+                    "name": "TSP Chemnitz",
+                    "url": "https://bushido-chemnitz.de/talentstuetzpunkt",
+                    "description": "Karate Talentstützpunkt Chemnitz - Spezialisierung auf Kata Wado Ryu"
+                }
+            ]
+        }
+    </script>
 </head>
 <body>
-<div class="three-columns-grid">
-    <div class="Zschopau">
+<main class="three-columns-grid">
+    <article class="Zschopau">
         <h2>TSP Zschopau</h2>
         <img src="https://picsum.photos/550/545?random=1">
-        <p>Karateverein Zschopau e.V.</p>
+        <h3>Karateverein Zschopau e.V.</h3>
         <p>Der TSP Zschopau arbeitet in der Disziplin Kata mit Schwerpunkt Goju Ryu. </p>
         <p><a class="button" href="https://www.karate-zschopau.de/">zum TSP-Zschopau</a></p>
-    </div>
-    <div class="Dresden">
+    </article>
+    <article class="Dresden">
         <h2>TSP Dresden</h2>
         <img src="https://picsum.photos/550/545?random=2">
-        <p>Dresdner Karate Team</p>
+        <h3>Dresdner Karate Team</h3>
         <p>Der TSP Dresden arbeitet in der Disziplin Kata mit Schwerpunkt Shotokan.</p>
         <p><a class="button" href="https://www.dresdner-karate.de/talentst%C3%BCtzpunkt-dresden/">zum TSP-Dresden</a>
         </p>
-    </div>
-    <div class="Chemnitz">
+    </article>
+    <article class="Chemnitz">
         <h2>TSP Chemnitz</h2>
         <img src="banner-tsp-chemnitz.png" alt="TSP Chemnitz">
-        <p>Chemnitzer Freizeit- und Wohngebietssportverein e.V.</p>
+        <h3>Chemnitzer Freizeit- und Wohngebietssportverein e.V.</h3>
         <p>Der TSP Chemnitz arbeitet in der Disziplin Kata mit Schwerpunkt Wado Ryu.</p>
         <p><a class="button" href="https://bushido-chemnitz.de/talentstuetzpunkt">zum TSP-Chemnitz</a></p>
-    </div>
-</div>
+    </article>
+</main>
 </body>
 </html>
